@@ -1,2 +1,15 @@
-# EGFR-QSAR-ChEMBL
-EGFR kinase inhibitors QSAR using only public ChEMBL IC50 data (3,528 compounds).   From complete beginner (R² 0.589) → 0.637 with XGBoost + Morgan radius=3.   Full raw journey: all failed experiments, 5-hour cells, Japanese thinking notes, error messages, scaffold analysis (quinazoline dominance), and final insights.  
+# EGFR QSAR Model
+
+## Overview
+Built QSAR model for EGFR inhibitors using ChEMBL IC50 data.
+- Data: 3,528 compounds
+- Features: Morgan FP (radius=3, 2048 bits)
+- Model: XGBoost
+- Final R²: 0.637
+
+## Usage
+Run `EGFR_QSAR_Project.ipynb` in Colab.
+
+## Results
+- Scaffold analysis: Quinazoline dominant in high-activity.
+- Error patterns: Over-prediction in polar scaffolds.
